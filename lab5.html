@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="" id="form">
+			<!--                    Personal Infomation              -->
+			<fieldset class="Personal">
+				<legend>Personal Information</legend>
+				<table>
+					<!--                row 1              -->
+					<tr>
+						<td><label for="fname">First Name</label></td>
+						<td><input class="name" stype="text" name="fname" id="fname" maxlength="50" required/></td>
+						<td>Gender</td>
+						<td>
+							<input type="radio" name="gender" id="female" value="female" maxlength="50" required/>
+							<label for="">Female</label>
+							<input type="radio" name="gender" id="male" value="male" required/>
+							<label for="">Male</label>
+						</td>
+					</tr>
+					<!--                row 2                 -->
+					<tr>
+						<td><label for="lname">Last Name</label></td>
+						<td><input class="name" type="text" name="lname" id="lname" required/></td>
+						<td>Nationality</td>
+						<td>
+							<select name="national" id="national" required>
+								<option value="Canadian">Canadian</option>
+								<option value="thailand">Thailand</option>
+								<option value="USA">USA</option>
+							</select>
+						</td>
+					</tr>
+					<!--                    row3                 -->
+					<tr>
+						<td>Address</td>
+						<td>
+							<textarea
+								name="address"
+								id="address"
+								cols="30"
+								rows="10"
+								maxlength="300"
+                                required
+							></textarea>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<!--                         Medical History                 -->
+
+			<fieldset class="Medical">
+				<legend>Medical History</legend>
+				<input type="checkbox" name="" id="Smallpox" value="Smallpox" class="checkboxs"/>
+				<label for="">Smallpox</label>
+				<input type="checkbox" name="" id="Mumps" value="Mumps" class="checkboxs"/>
+				<label for="">Mumps</label>
+				<input type="checkbox" name="" id="Dizziness" value="Dizziness" class="checkboxs"/>
+				<label for="">Dizziness</label>
+				<input type="checkbox" name="" id="Sneezing" value="Sneezing" class="checkboxs"/>
+				<label for="">Sneezing</label>
+			</fieldset>
+
+			<!--                         Current Medication                 -->
+
+			<fieldset class="Current">
+				<legend>Current Medication</legend>
+				<label>Are you currently taking any medication?</label>
+				<input type="radio" name="AnsMedication" id="yes" value="yes" required/>
+				<label for="">Yes</label>
+				<input type="radio" name="AnsMedication" id="no" value="no" required/>
+				<label for="">No</label>
+				<p for=""></p>
+					If you are currently taking medication please indicate it in the
+					space below:
+				</p>
+				<textarea name="indicate" id="info" cols="100" rows="10" required></textarea>
+			</fieldset>
+            <div class="btn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </div>
+		</form>
+        <script src="./validate_form.js"></script>
+	</body>
+</html>

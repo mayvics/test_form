@@ -1,0 +1,8 @@
+table,
+td {
+	border: 1px solid black;
+}
+
+.Personal .name {
+	width: 97%;
+}
